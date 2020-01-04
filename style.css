@@ -1,11 +1,13 @@
 * {
-    font-family: 'Sarpanch', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
     font-size: 30px;
+   
     
 }
-
-li {
-    font-size: 20px; 
-    color: #4a4a4a;
+.navtext {
+    font-size: 15px;
 }
+
+
+
 
