@@ -4,34 +4,39 @@
 
     <head>
 
-        <title>Contact Me</title>
-
         <meta charset="utf-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/uikit.min.css" />
+        <!-- Styles -->
+    
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css"/>
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        
 
-        <script src="js/uikit.min.js"></script>
-
-        <script src="js/uikit-icons.min.js"></script>
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-
-        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Rubik&display=swap" rel="stylesheet">
-
+        <!-- Fonts -->
+        
+        <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow|Rubik&display=swap" rel="stylesheet">
+        <script defer src="http://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        
+        
+        <!-- Call the script -->
+        
+        <!-- Internal Styling -->
+        
+        <link rel="stylesheet" href="../mybulma/css/mystyles.css">
         <link rel="stylesheet" href="style.css">
+        
+        
+        <script src="granim.min.js"></script>
 
     </head>
 
     <body>
        
-        <img class="uk-cover uk-height-viewport" src="clouds-heaven-outdoors-space-479821.jpg" alt="" uk-cover>
-                
+        <div class= "uk-container">
+            <div id='canvas-image-wrapper' uk-cover>
+                <canvas id="canvas-image-blending"></canvas>
+                  </div>      
         
         <div class="uk-position-top-center uk-margin">
 
@@ -106,9 +111,32 @@
     
         </div>
         
-
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-<!-- Place this tag in your head or just before your close body tag. -->
+</div>
+<script>
+    var granimInstance = new Granim({
+  element: '#canvas-image-blending',
+  direction: 'top-bottom',
+  isPausedWhenNotInView: true,
+  image : {
+  source: 'clouds-heaven-outdoors-space-479821.jpg',
+  position: ['center', 'center'],
+  stretchMode: ['stretch-if-smaller', 'stretch-if-bigger'],
+  blendingMode: 'multiply'
+  },
+  states : {
+  "default-state": {
+      gradients: [
+          ['#29323c', '#485563'],
+          ['#FF6B6B', '#556270'],
+          ['#80d3fe', '#7ea0c4'],
+          ['#f0ab51', '#eceba3']
+      ],
+      transitionSpeed: 7000
+  }
+  }
+  });
+  </script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     </body>
 </html>
