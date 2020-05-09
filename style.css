@@ -1,15 +1,17 @@
 * {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
     
 }
 
 body {
     margin: 0;
 }
-.navtext {
-    font-size: 50px;
+.uk-navbar-nav {
+    font-weight: bold;
+    font-size: 30px;
 }
 
 #canvas-image-wrapper {
@@ -42,5 +44,8 @@ body {
 #aboutme {
     font-size: large;
     font-family: 'Open Sans', sans-serif;
+}
+.title {
+    font-weight: bold;  
 }
 
