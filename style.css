@@ -5,13 +5,21 @@
     /* font-weight: bold; */
     
 }
-
+a {
+    color: indianred;
+    font-weight: bold;
+    font-size: 18px;
+}
 body {
     margin: 0;
+}
+span {
+    color: indianred
 }
 .uk-navbar-nav {
     font-weight: bold;
     font-size: 30px;
+    
 }
 
 #canvas-image-wrapper {
