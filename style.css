@@ -6,7 +6,7 @@
     
 }
 a {
-    color: indianred;
+    color: rgb(2, 179, 185);
     font-weight: bold;
     font-size: 18px;
 }
@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 span {
-    color: indianred
+    color:  rgb(2, 179, 185);
 }
 .uk-navbar-nav {
     font-weight: bold;
